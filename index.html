@@ -1,80 +1,232 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Crime Awareness & Investigation Hub</title>
+<meta charset="UTF-8">
+<title>Crime Awareness & Investigation Hub</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#090909;
+color:white;
+}
+
+header{
+background:black;
+padding:20px;
+border-bottom:2px solid red;
+}
+
+.logo{
+color:red;
+font-size:32px;
+font-weight:bold;
+}
+
+nav{
+float:right;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+}
+
+.hero{
+padding:100px 60px;
+background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+url("https://images.unsplash.com/photo-1451187580459-43490279c0fa");
+background-size:cover;
+}
+
+.hero h1{
+font-size:60px;
+color:red;
+}
+
+.hero p{
+font-size:24px;
+margin-top:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:red;
+color:white;
+text-decoration:none;
+}
+
+.section-title{
+text-align:center;
+padding:30px;
+font-size:35px;
+color:red;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#111;
+border:1px solid red;
+width:280px;
+padding:20px;
+border-radius:10px;
+}
+
+.card h3{
+color:red;
+margin-bottom:10px;
+}
+
+.card:hover{
+transform:scale(1.05);
+transition:.3s;
+}
+
+.about{
+display:flex;
+flex-wrap:wrap;
+padding:50px;
+gap:30px;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text h2{
+color:red;
+margin-bottom:15px;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+padding:30px;
+background:#111;
+border-top:1px solid red;
+border-bottom:1px solid red;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+color:red;
+}
+
+footer{
+background:black;
+padding:30px;
+text-align:center;
+border-top:2px solid red;
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Crime Awareness & Investigation Hub</h1>
+<header>
+<span class="logo">🔍 CRIME HUB</span>
+<nav>
+<a href="#">Home</a>
+<a href="#">Crime Stories</a>
+<a href="#">Forensics</a>
+<a href="#">Behaviour</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+</header>
 
-    <p>
-        Welcome to the Crime Awareness & Investigation Hub. This website explores
-        crime stories, criminal behavior, forensic science, digital investigations,
-        and the impact of crime on society.
-    </p>
+<section class="hero">
+<h1>CRIME AWARENESS & INVESTIGATION HUB</h1>
+<p>Exploring Crime. Understanding Behaviour. Advancing Forensic Science.</p>
+<a href="#" class="btn">Explore Now</a>
+</section>
 
-    <hr>
+<h2 class="section-title">Explore Our Sections</h2>
 
-    <h2>Crime Stories</h2>
-    <p>
-        Explore real-life crime stories and understand how investigations are
-        conducted to solve cases and deliver justice.
-    </p>
+<div class="cards">
 
-    <h2>Crime Pictures</h2>
-    <p>
-        Educational images related to forensic science, crime scene investigation,
-        law enforcement, and evidence collection.
-    </p>
+<div class="card">
+<h3>📂 Crime Stories</h3>
+<p>Real-life criminal cases and investigation methods.</p>
+</div>
 
-    <h2>Criminal Behaviour</h2>
-    <p>
-        Learn about psychological, social, and environmental factors that can
-        influence criminal behavior.
-    </p>
+<div class="card">
+<h3>👣 Crime Scene Investigation</h3>
+<p>Evidence collection and forensic procedures.</p>
+</div>
 
-    <h2>Impact on Life</h2>
-    <p>
-        Crime affects victims, families, communities, and society. Understanding
-        these impacts helps promote awareness and prevention.
-    </p>
+<div class="card">
+<h3>🧬 DNA Fingerprinting</h3>
+<p>Identify individuals using unique DNA profiles.</p>
+</div>
 
-    <h2>DNA Fingerprinting</h2>
-    <p>
-        DNA fingerprinting is a forensic technique used to identify individuals
-        through unique DNA patterns. It is widely used in criminal investigations,
-        victim identification, and paternity testing.
-    </p>
+<div class="card">
+<h3>💻 Digital Forensics</h3>
+<p>Analyze digital evidence from devices and networks.</p>
+</div>
 
-    <h2>Digital Forensics</h2>
-    <p>
-        Digital forensics focuses on recovering and analyzing electronic evidence
-        from computers, smartphones, networks, and storage devices.
-    </p>
+<div class="card">
+<h3>🧠 Criminal Behaviour</h3>
+<p>Psychological and social factors behind crime.</p>
+</div>
 
-    <h2>Cyber Crime Awareness</h2>
-    <p>
-        Learn about online scams, phishing attacks, identity theft, hacking,
-        and methods to stay safe in the digital world.
-    </p>
+</div>
 
-    <h2>Crime Prevention</h2>
-    <p>
-        Awareness, education, community engagement, and security measures play
-        important roles in preventing crime.
-    </p>
+<section class="about">
+<div class="about-text">
+<h2>Evidence Never Lies</h2>
+<p>
+Behind every crime is a story. Behind every story is evidence.
+Our mission is to promote awareness, forensic science education,
+and crime prevention.
+</p>
+</div>
+</section>
 
-    <h2>Resources & References</h2>
-    <p>
-        Find educational materials related to criminology, forensic science,
-        cyber security, and law enforcement.
-    </p>
+<div class="stats">
+<div class="stat">
+<h2>1000+</h2>
+<p>Cases Analyzed</p>
+</div>
 
-    <hr>
+<div class="stat">
+<h2>500+</h2>
+<p>DNA Profiles</p>
+</div>
 
-    <footer>
-        <p>© 2026 Crime Awareness & Investigation Hub</p>
-    </footer>
+<div class="stat">
+<h2>200+</h2>
+<p>Investigations</p>
+</div>
+
+<div class="stat">
+<h2>10K+</h2>
+<p>Lives Impacted</p>
+</div>
+</div>
+
+<footer>
+© 2026 Crime Awareness & Investigation Hub
+</footer>
 
 </body>
 </html>
